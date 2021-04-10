@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="text-align: center;">inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content style="text-align: center; padding: 10%;">
+
+<ion-list>
+  <ion-item *ngFor="let c of componentes" [routerLink]="c.redirectTo" detail>
+    <ion-icon [name]="c.icon" slot="start" class="primary"></ion-icon>
+    {{ c.name }}
+  </ion-item>
+  <ion-item>
+
+  </ion-item>
+  
+</ion-list>
+
+<!--   De esta forma se colocan los items manualmente -- con el ngFor solo se necesita una sola ves
+  <ion-button [routerLink]="['/aler']" >
+    alert
+  </ion-button>
+  <ion-button [routerLink]="['/action-sheet']" >
+    action-sheet
+  </ion-button> -->
+
+</ion-content>
