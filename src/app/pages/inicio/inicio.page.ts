@@ -28,6 +28,21 @@ export class InicioPage implements OnInit {
       icon: 'accessibility-outline',
       name: 'avatar ;V',
       redirectTo: '/avatar'
+    },
+    {
+      icon: 'bonfire-outline',
+      name: 'botones ;<',
+      redirectTo: '/button'
+    },
+    {
+      icon: 'bonfire',
+      name: 'card *-*',
+      redirectTo: '/card'
+    },
+    {
+      icon: 'eyedrop-sharp',
+      name: 'check-box X-X',
+      redirectTo: '/check-box'
     }
   ];
 
